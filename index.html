@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fagner Melo - Home Office</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+      <pre><p>Vida:</p><p2> 
+Uma experiência autobiografica em Realidade Aumentada:
+</p2><p3>Available for Android: install <a href="https://play.google.com/store/apps/details?id=com.google.ar.core"> Google ARCore</a>
+and iOS 12 or later
+Creating by <a href="https://biglink.to/FagnerMelo" target="_blank">Fagner Melo</a></p3></pre>
+  
+    <!-- The following libraries and polyfills are recommended to maximize browser support -->
+    <!-- NOTE: you must adjust the paths as appropriate for your project -->
+    
+    <!-- 🚨 REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+
+    <!-- 💁 OPTIONAL: Intersection Observer polyfill for better performance in Safari and IE11 -->
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+
+    <!-- 💁 OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
+    <script src="https://unpkg.com/resize-observer-polyfill@1.5.0/dist/ResizeObserver.js"></script>
+
+    <!-- 💁 OPTIONAL: Fullscreen polyfill is required for experimental AR features in Canary -->
+    <!--<script src="https://unpkg.com/fullscreen-polyfill@1.0.2/dist/fullscreen.polyfill.js"></script>-->
+
+    <!-- 💁 OPTIONAL: Include prismatic.js for Magic Leap support -->
+    <script src="https://unpkg.com/@magicleap/prismatic/prismatic.min.js"></script>
+    
+  
+  
+  </head> 
+  
+<body>
+  
+
+  
+  <model-viewer   src="assets/teste quarto menor 3.glb"
+                  ios-src="assets/teste quarto menor 3.usdz#allowsContentScaling=1""
+                  background-color="#bbbbbb"
+                  alt="Home Office - Fagner Melo"                           
+                  shadow-intensity="1"
+                  ar-scale="auto"
+                  camera-controls
+                  ar-scale="auto"
+                  auto-rotate ar
+                  camera-orbit="2.2rad 1.2rad 0,5m"
+                  style="position:absolute; left:0; top:0; margin:0; padding:0; width:100%; height:100%;">
+    </model-viewer>
+                                                                                                                                                                                                               
+  <!-- 💁 Include both scripts below to support all browsers! -->
+
+  <!-- Loads <model-viewer> for modern browsers: -->
+  <script type="module"
+      src="https://unpkg.com/@google/model-viewer@0.10.0/dist/model-viewer.js">
+  </script>
+                                                                              
+  <script src="js/ar_quicklook.js"></script>
+                                  
+  <!-- Loads <model-viewer> for old browsers like IE11: -->
+  <script nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+  </script>
+                                                                              
+  <!-- Custom scripts for this template -->                                                                           
+  <script src="js/ar_quicklook.js"></script>
+  
+</body>
+</html>
